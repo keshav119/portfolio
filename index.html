@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chenna Keshav - Software Developer</title>
     <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
-    <script src="portfolio/index.js"></script> <!-- Include the JavaScript file -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var projectItems = document.querySelectorAll('.project-item');
+
+            projectItems.forEach(function (item) {
+                var projectTitle = item.querySelector('.project-title');
+                var projectDetails = item.querySelector('.project-details');
+
+                projectTitle.addEventListener('click', function () {
+                    projectDetails.classList.toggle('show-details');
+                });
+            });
+        });
+    </script> <!-- Include the JavaScript file -->
 </head>
 <body>
 
@@ -63,6 +76,6 @@
         <!-- Add more contact information as needed -->
     </section>
 
-    <script src="portfolio/index.js"></script>
+   
 </body>
 </html>
