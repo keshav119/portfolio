@@ -108,7 +108,7 @@ body {
 
 .project-details.show-details {
     display: block;
-    max-height: 500px; 
+    max-height: 500px;
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
