@@ -5,26 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    console.log('JavaScript is running!');
-    
-    var projectItems = document.querySelectorAll('.project-item');
-
-    projectItems.forEach(function (item) {
-        var projectTitle = item.querySelector('.project-title');
-        var projectDetails = item.querySelector('.project-details');
-        var arrow = item.querySelector('.arrow'); // Update to select arrow within the project item
-
-        projectTitle.addEventListener('click', function () {
-            console.log('Clicked on project title');
-            projectDetails.classList.toggle('show-details');
-            arrow.classList.toggle('down'); // Toggle the down class to apply rotation
-        });
-    });
-});
-
-    </script>
     <title>Chenna Keshav - SDE</title>
 </head>
 <body>
@@ -92,6 +72,6 @@
         <li><a href="https://github.com/keshav119" target="_blank"><b>GitHub</b></a></li>
         <li><a href="https://www.linkedin.com/in/keshavgowda/" target="_blank"><b>LinkedIn</b></a></li>
     </section>
-
+    <script src="script.js"></script>
 </body>
 </html>
