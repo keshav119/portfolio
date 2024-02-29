@@ -58,14 +58,14 @@ body {
     font-size: 1.1em;
 }
 
-.project-title .arrow {
+.arrow {
     display: inline-block;
-    margin-left: 5px; 
-    transition: transform 0.3s ease-in-out;
+    position: relative;
+    transition: transform 0.3s ease; /* Optional: Smooth transition */
 }
 
-.project-title.show-details .arrow {
-    transform: rotate(180deg);
+.arrow.down {
+    transform: rotate(90deg);
 }
 
 
@@ -89,7 +89,7 @@ body {
     margin-top: 15px;
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .project-details p {
@@ -109,13 +109,20 @@ body {
 .project-details.show-details {
     display: block;
     max-height: 500px;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 #contact a {
     color: #3498db;
     text-decoration: none;
     font-weight: bold;
+    font-size: 20px;
+}
+
+#contact ph {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 #contact a:hover {

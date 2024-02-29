@@ -14,10 +14,12 @@
     projectItems.forEach(function (item) {
         var projectTitle = item.querySelector('.project-title');
         var projectDetails = item.querySelector('.project-details');
+        var arrow = item.querySelector('.arrow'); // Update to select arrow within the project item
 
         projectTitle.addEventListener('click', function () {
             console.log('Clicked on project title');
             projectDetails.classList.toggle('show-details');
+            arrow.classList.toggle('down'); // Toggle the down class to apply rotation
         });
     });
 });
@@ -47,7 +49,7 @@
         <h2>Projects</h2>
         <ul>
             <li class="project-item">
-                <h3 class="project-title">CloneFlix(Netflix Clone) - MERN stack with json-web-token<span class="arrow"></span></h3>
+                <h3 class="project-title">CloneFlix(Netflix Clone) - MERN stack with json-web-token <span class="arrow">&#11166;</span></h3>
                 <div class="project-details">
                     <p>Description: A full stack streaming platform similar to that of Netflix the popular streaming platfrom.</p>
                     <p>Stack: MongoDB, Express.js, React.js, Node.js, JWT</p>
@@ -55,7 +57,7 @@
                 </div>
             </li>
             <li class="project-item">
-                <h3 class="project-title">Chunkwise Video Download & Upload large media file to & from Google drive<span class="arrow"></span></h3>
+                <h3 class="project-title">Chunkwise Video Download & Upload large media file to & from Google drive <span class="arrow">&#11166;</span></h3>
                 <div class="project-details">
                     <p>Description: A backend logic developed using Node and google drive API to download a video file from google drive and as it is getting 
                         downloaded Uploading it to a different folder in Google drive using just the links of the file and destination folder chunk-wise which 
@@ -65,7 +67,7 @@
                 </div>
             </li>
             <li class="project-item">
-                <h3 class="project-title">Add to cart page for Ecommerce(Frontend-Interactive)<span class="arrow"></span></h3>
+                <h3 class="project-title">Add to cart page for Ecommerce(Frontend-Interactive) <span class="arrow">&#11166;</span></h3>
                 <div class="project-details">
                     <p>Description: This is a simple interactive add-to-cart page created using vanilla HTML, CSS & JS.</p>
                     <p>Stack: HTML, CSS, JS</p>
@@ -73,7 +75,7 @@
                 </div>
             </li>
             <li class="project-item">
-                <h3 class="project-title">Fitness Tracker(WORK IN PROGRESS)<span class="arrow"></span></h3>
+                <h3 class="project-title">Fitness Tracker(WORK IN PROGRESS) <span class="arrow">&#11166;</span></h3>
                 <div class="project-details">
                     <p>Description: A simple fitness tracker implementing graphQL to give valuable fitness insights to the end-user and track fitness and diet on a day to day basis.</p>
                     <p>Stack: MongoDB, ExpressJS, FireBase, NodeJS, ReactJS</p>
@@ -85,9 +87,9 @@
 
     <section id="contact" class="block contact">
         <h2>Contact</h2>
-        <p>Ph. No.: (+91) 9900149306</p>
-        <p>Email: channakeshav99.ck@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/keshav119" target="_blank">github.com/keshav119</a></p>
+        <li><ph><b>(+91) 9900149306</b></ph></li>
+        <li><a href="mailto:channakeshav99.ck@gmail.com" target="_blank"><b>channakeshav99.ck@gmail.com</b></a></li>
+        <li><a href="https://github.com/keshav119" target="_blank"><b>GitHub</b></a></li>
         <li><a href="https://www.linkedin.com/in/keshavgowda/" target="_blank"><b>LinkedIn</b></a></li>
     </section>
 
